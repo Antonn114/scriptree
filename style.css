@@ -91,6 +91,7 @@ textarea{
   height: 0.5rem;
   max-width: 300px;
   width: auto;
+  overflow:hidden;
 }
 
 .orgchart .node .content{
@@ -103,9 +104,24 @@ textarea{
   max-width: 300px;
   width: auto;
   height: auto;
+  overflow:hidden;
+}
+
+.node-action-target{
+  background: lightyellow;
+  box-shadow: 0 0 5px 2px lightyellow !important;
 }
 
 #treeview-node-field {
   margin: 10px;
   width: 100%;
+  border: 2px #fecaca solid;
+}
+
+#treeview-node-field-submit{
+  border: 2px #fecaca solid;
+  outline: none;
+  padding: 2px;
+  margin-left: 10px;
+  background: beige;
 }
