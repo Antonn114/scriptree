@@ -1,0 +1,111 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", "Arial", "sans-serif";
+  background: bisque;
+}
+
+textarea{
+  font-family: "Roboto", "Arial", "sans-serif";
+  border:none;
+  outline: none;
+  background: beige;
+  padding: 10px;
+  resize: none;
+}
+
+.column {
+  height: 80%;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+}
+#column-left{
+  left: 0;
+}
+
+#column-right{
+  right: 0;
+}
+
+#workspace textarea{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#treeview-content{
+  box-sizing: border-box;
+  background: beige;
+  text-align: center;
+}
+
+#treeview{
+  height: 100%;
+  margin: 0.5rem;
+  border: 2px #fecaca solid;
+  overflow: hidden;
+}
+
+#workspace{
+  height: 100%;
+  margin: 0.5rem;
+  border: 2px #fecaca solid;
+}
+
+#treeview-toolbar{
+  width: 100px;
+  text-align: center;
+  margin: 10px;
+  padding: 2px;
+  position: absolute;
+  z-index: 1000;
+  right: 10px;
+  border: 2px #fecaca solid;
+  background: beige;
+}
+#treeview-toolbar button{
+  border: none;
+  outline: none;
+  width: 100%;
+  background: #fecaca;
+}
+#treeview-toolbar button:hover{
+  background: #fee2e2;
+}
+
+.orgchart{
+  height: 4000px;
+  width: 4000px;
+  padding: 100px;
+  background-image: radial-gradient(black 1px, transparent 0);
+  background-size: 32px 32px;
+  background-position: -15px -15px;
+}
+
+
+.orgchart .node .title{
+  line-height: 0.5rem;
+  height: 0.5rem;
+  max-width: 300px;
+  width: auto;
+}
+
+.orgchart .node .content{
+  text-align: left;
+  padding: 4px;
+  line-height: 24px;
+  font-size: 16px;
+  word-break: break-word;
+  white-space: break-spaces;
+  max-width: 300px;
+  width: auto;
+  height: auto;
+}
+
+#treeview-node-field {
+  margin: 10px;
+  width: 100%;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scriptree</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/orgchart/4.0.1/css/jquery.orgchart.css" integrity="sha512-Tnxj/C1VZKWks1kmK3dcJUFF5BxbhZsQgTR0MAKo9+a2Gz4mP+QbqC4hnJaf15UlLXlYzhqrerlK5/4e0aphPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="main-container">
+      <div class="column" id="column-left">
+        <div id="treeview">
+          <div id="treeview-toolbar">
+            <button id="treeview-reset">Reset view</button>
+            <button id="treeview-new-tree">Create new tree</button>
+            <button id="treeview-delete-node">Delete</button>
+            <button id="treeview-add-child">Add child</button>
+          </div>
+          <div id="treeview-content">
+          </div>
+        </div>
+        <textarea id="treeview-node-field" placeholder="Write the contents of the new node here..."></textarea>
+      </div>
+      <div class="column" id="column-right">
+        <div id="workspace">
+          <textarea spellcheck="false" placeholder="Write your essay here..."></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/orgchart/4.0.1/js/jquery.orgchart.js" integrity="sha512-eO+hZCUW2yJDmTI9dbry3tu+kXws/MMFd/YxRtl0dAaCccpGQwJTteQB+8h9P5MSTdCW4AcYQGxM2lWJqkNr/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
